@@ -23,6 +23,10 @@ const activeGames = {};
 /**
  * Interactions endpoint URL where Discord will send HTTP requests
  */
+app.get(`${process.env.BASE_URL}`, ()=>{
+  return "hello"
+})
+
 app.post(`${process.env.BASE_URL}/interactions`, async function (req, res) {
   // Interaction type and data
   const { type, id, data } = req.body;
