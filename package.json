@@ -8,7 +8,8 @@
     "node": "16.x"
   },
   "scripts": {
-    "start": "node app.js",
+    "start": "npm run register ; node app.js",
+    "build": "npm run register ; node app.js",
     "register": "node commands.js",
     "dev": "nodemon app.js"
   },
